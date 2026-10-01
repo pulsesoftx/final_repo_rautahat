@@ -10,31 +10,6 @@ const productFeatures = [
   { label: "TRUSTED BY", value: "CLIENTS WORLDWIDE", icon: "🌍" },
 ];
 
-const productHighlights = [
-  {
-    name: "Pan Masala",
-    summary: "Aromatic blends crafted with premium ingredients and a refreshing finish.",
-    image: "/products/pan-masala.svg",
-  },
-  {
-    name: "Gutka / Chewing Tobacco",
-    summary: "Bold, rich flavor profile for consumers who prefer a traditional chew.",
-    image: "/products/gutka-chewing-tobacco.svg",
-  },
-  {
-    name: "Surti Tobacco",
-    summary: "Distinctive taste and heritage quality inspired by classic Surti traditions.",
-    image: "/products/surti-tobacco.svg",
-  },
-  {
-    name: "Tobacco",
-    summary: "Carefully sourced and processed for consistency, aroma, and satisfaction.",
-    image: "/products/tobacco.svg",
-  },
-];
-
-const featuredProducts = productHighlights.slice(0, 3);
-
 export default function Home() {
   return (
     <main className="landing-page">
@@ -66,42 +41,6 @@ export default function Home() {
 
       </section>
 
-      <section className="highlight-section shell" id="products">
-        <div className="section-heading">
-          <div>
-            <span className="section-label">Our Signature Range</span>
-            <h2>Product Highlights</h2>
-          </div>
-          <p>Traditional quality, crafted for authentic flavor and trusted taste.</p>
-        </div>
-
-        <div className="highlight-grid">
-          {featuredProducts.map((product) => (
-            <a
-              key={product.name}
-              className="highlight-card"
-              href={`/products#${product.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="highlight-media">
-                {product.image ? (
-                  <img src={product.image} alt={product.name} className="highlight-image" />
-                ) : (
-                  <label className="highlight-upload">
-                    <input type="file" accept="image/*" aria-label={`Upload photo for ${product.name}`} />
-                    <span>Upload Photo</span>
-                  </label>
-                )}
-              </div>
-              <h3>{product.name}</h3>
-              <p>{product.summary}</p>
-              <span className="highlight-view">View product <span aria-hidden="true">↗</span></span>
-            </a>
-          ))}
-        </div>
-      </section>
-
       <section className="gallery-shell shell" aria-label="Product gallery">
         <img src="/product-collage.svg" alt="Product gallery" className="gallery-image" />
       </section>
@@ -125,8 +64,7 @@ export default function Home() {
           <h2>Get in Touch</h2>
           <p>Experience the taste of tradition</p>
           <div className="contact-buttons">
-            <a className="button button-primary" href="mailto:Contact@rautahatpanmasalaudhyog.co.np">Email Us <span>↗</span></a>
-            <a className="button button-secondary" href="tel:+977123456789">Call Us <span>↗</span></a>
+            <a className="button button-primary" href="mailto:contact@rautahatpanmasalaudhyog.com.np">Email Us <span>↗</span></a>
           </div>
         </div>
       </section>
@@ -134,9 +72,9 @@ export default function Home() {
       <footer className="footer">
         <div className="footer-content shell">
           <div className="footer-brand">
-            <span className="footer-seal">R</span>
+            <img className="footer-seal" src="/logo.svg" alt="Rautahat Panmasala logo" />
             <div>
-              <strong>RAUTAHAT PANMASAL UDHYOG PVT. LTD.</strong>
+              <strong>RAUTAHAT PAN MASALA UDHYOG PVT.LTD</strong>
               <p>TRADITION. QUALITY. TRUST.</p>
             </div>
           </div>
@@ -144,8 +82,8 @@ export default function Home() {
             <a href="#top">Back to top</a>
           </div>
           <p className="footer-copy">
-            <span>&copy; 2026 Rautahat Panmasal Udhyog Pvt. Ltd. All rights reserved.</span>
-            <span className="footer-credit">Created by Pulsesoftx Pvt. Ltd. (BB)</span>
+            <span>&copy; 2026 Rautahat Panmasal Udhyog Pvt. Ltd. All rights reserved. (BB)</span>
+            <span className="footer-credit">Created by Pulsesoftx Pvt. Ltd.</span>
           </p>
         </div>
       </footer>

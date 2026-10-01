@@ -555,15 +555,10 @@ main { overflow: clip; }
   justify-content: center;
   width: 48px;
   height: 48px;
-  background: linear-gradient(135deg, #fbdc88, #b27a2e);
-  border: 2px solid rgba(255, 245, 214, 0.6);
+  border: 1px solid var(--gold);
   border-radius: 50%;
-  color: #1d311e;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 24px;
-  font-weight: 700;
+  object-fit: contain;
 }
-.footer-seal { object-fit: contain; }
 
 .footer-brand strong {
   font-family: 'Cormorant Garamond', serif;
