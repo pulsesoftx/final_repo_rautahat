@@ -13,7 +13,7 @@ const productFeatures = [
 export default function Home() {
   return (
     <main className="landing-page">
-      <header className="site-header">
+      <header className="site-header landing-header">
         <a className="site-brand" href="#top" aria-label="Rautahat Panmasala home">
           <img className="site-brand-mark" src="/logo.svg" alt="Rautahat Panmasala logo" />
           <span>
@@ -21,10 +21,13 @@ export default function Home() {
             <small>PANMASALA UDHYOG</small>
           </span>
         </a>
-        <nav className="site-nav" aria-label="Main navigation">
-          <a href="#about">Our story</a>
+        <nav className="site-nav landing-nav" aria-label="Main navigation">
+          <a className="landing-nav-home" href="#top">Home</a>
+          <a href="#about">About Us</a>
+          <a href="/products">Products</a>
+          <a href="#about">Quality</a>
           <a href="#contact">Contact</a>
-          <a className="header-product-link" href="/products" target="_blank" rel="noreferrer">
+          <a className="header-product-link" href="/products">
             View products <span aria-hidden="true">↗</span>
           </a>
         </nav>
@@ -33,16 +36,15 @@ export default function Home() {
       <FeaturesTicker />
 
       <section className="hero-scene" id="top">
-        <div className="hero-overlay" />
-
-        <div className="hero-content shell hero-content--clean">
-          <div className="hero-art hero-art--minimal" aria-label="Premium pan masala product display" />
-        </div>
-
+        <img
+          src="/any.svg"
+          alt="Rautahat Pan Masala premium blend with mountain-sourced ingredients, supari, and kesar"
+          className="home-hero-image"
+        />
       </section>
 
       <section className="gallery-shell shell" aria-label="Product gallery">
-        <img src="/product-collage.svg" alt="Product gallery" className="gallery-image" />
+        <img src="/product-collage.svg" alt="Rautahat Panmasala product gallery" className="gallery-image" />
       </section>
 
       <section className="about shell" id="about">

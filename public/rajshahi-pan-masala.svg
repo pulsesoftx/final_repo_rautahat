@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="900" viewBox="0 0 720 900" fill="none">
+  <defs>
+    <linearGradient id="pack" x1="90" y1="50" x2="630" y2="850" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C2632"/>
+      <stop offset="0.52" stop-color="#5D1724"/>
+      <stop offset="1" stop-color="#30111A"/>
+    </linearGradient>
+    <linearGradient id="foil" x1="220" y1="190" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0C2"/>
+      <stop offset="0.5" stop-color="#DDBB68"/>
+      <stop offset="1" stop-color="#A96B2D"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#16090B" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <ellipse cx="360" cy="842" rx="220" ry="24" fill="#20110F" fill-opacity="0.16"/>
+  <g filter="url(#shadow)">
+    <path d="M145 72Q360 38 575 72L600 806Q360 848 120 806L145 72Z" fill="url(#pack)"/>
+    <path d="M157 88Q360 60 563 88L585 789Q360 827 135 789L157 88Z" stroke="#E5C675" stroke-width="4"/>
+    <path d="M145 130Q360 160 580 130L584 225Q360 256 141 225L145 130Z" fill="url(#foil)"/>
+    <path d="M165 144Q360 169 560 144" stroke="#7C3120" stroke-opacity="0.62" stroke-width="2"/>
+    <text x="360" y="194" fill="#37151A" font-family="Georgia,serif" font-size="23" font-weight="700" letter-spacing="5" text-anchor="middle">EXCLUSIVE TASTE</text>
+    <text x="360" y="316" fill="#F8E6B0" font-family="Georgia,serif" font-size="43" font-weight="700" letter-spacing="2" text-anchor="middle">RAJSHAHI</text>
+    <path d="M244 346H476" stroke="#DDBB68" stroke-width="3"/>
+    <path d="M360 365C330 404 306 428 306 456C306 485 329 507 360 507C391 507 414 485 414 456C414 428 390 404 360 365Z" fill="url(#foil)" fill-opacity="0.94"/>
+    <path d="M360 398C346 420 334 436 334 454C334 469 345 480 360 480C375 480 386 469 386 454C386 436 374 420 360 398Z" fill="#6E1B29"/>
+    <text x="360" y="570" fill="#FFF2D3" font-family="Georgia,serif" font-size="39" font-weight="700" text-anchor="middle">PAN MASALA</text>
+    <text x="360" y="615" fill="#E9CC83" font-family="Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="5" text-anchor="middle">PREMIUM BLEND</text>
+    <path d="M212 658H508" stroke="#DDBB68" stroke-opacity="0.78" stroke-width="2"/>
+    <text x="360" y="707" fill="#F6E8C7" font-family="Georgia,serif" font-size="20" text-anchor="middle">A Rich, Traditional Taste</text>
+    <path d="M145 748Q360 777 585 748L588 792Q360 830 133 792L145 748Z" fill="#DDBB68"/>
+    <text x="360" y="786" fill="#3B1718" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3" text-anchor="middle">RAUTAHAT PANMASALA UDHYOG</text>
+  </g>
+</svg>
