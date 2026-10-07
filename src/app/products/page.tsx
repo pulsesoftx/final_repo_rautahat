@@ -50,7 +50,7 @@ export default function ProductsPage() {
               className="product-showcase-image"
             />
             <div className="product-showcase-copy">
-              <h2>Manikchand<br />Premium</h2>
+              <h2>Exclusive Taste<br />Manikchand</h2>
               <strong>Classic Blend. Timeless Taste.</strong>
               <p>A perfect blend of tradition and quality, bringing you an authentic taste loved for generations.</p>
               <div className="product-card-features">
