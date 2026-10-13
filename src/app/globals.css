@@ -872,12 +872,6 @@ main { overflow: clip; }
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.footer-credit {
-  color: #9d9589;
-  display: block;
-  margin-top: 10px;
-}
-
 .hero-flower {
   position: absolute;
   bottom: 120px;

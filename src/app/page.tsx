@@ -85,7 +85,6 @@ export default function Home() {
           </div>
           <p className="footer-copy">
             <span>&copy; 2026 Rautahat Panmasal Udhyog Pvt. Ltd. All rights reserved.</span>
-            <span className="footer-credit">Powered by Pulsesoftx Pvt. Ltd.</span>
           </p>
         </div>
       </footer>
